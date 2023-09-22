@@ -78,14 +78,21 @@ export default function Home() {
                   </div>
                 }
               >
-                <form className="flex h-full w-full items-center justify-center gap-2">
+                <form
+                  className="flex h-full w-full items-center justify-center gap-2"
+                  onSubmit={() => {}}
+                >
                   <Input
                     type="text"
                     radius="sm"
                     placeholder="Enter App Name or URL"
                     variant="bordered"
                   />
-                  <Button className="rounded-lg text-teal-500" variant="ghost">
+                  <Button
+                    type="submit"
+                    className="rounded-lg text-teal-500"
+                    variant="ghost"
+                  >
                     Find App
                   </Button>
                 </form>
@@ -99,14 +106,21 @@ export default function Home() {
                   </div>
                 }
               >
-                <form className="flex h-full w-full items-center justify-center gap-2">
+                <form
+                  className="flex h-full w-full items-center justify-center gap-2"
+                  onSubmit={() => {}}
+                >
                   <Input
                     type="text"
                     radius="sm"
                     placeholder="Enter App ID"
                     variant="bordered"
                   />
-                  <Button className="rounded-lg text-teal-500" variant="ghost">
+                  <Button
+                    type="submit"
+                    className="rounded-lg text-teal-500"
+                    variant="ghost"
+                  >
                     Find App
                   </Button>
                 </form>

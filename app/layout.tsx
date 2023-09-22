@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
-import Header from "./components/Header";
 import { Providers } from "./providers";
 
 const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"] });
