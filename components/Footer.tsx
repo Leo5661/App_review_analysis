@@ -1,24 +1,23 @@
-import Link from "next/link";
-import React from "react";
-import { Links } from "../constants/constants";
+import Link from 'next/link';
+import { Links } from '@/constants/constants';
 
 type Props = {};
 
 export default function Footer({}: Props) {
   return (
-    <div className="flex w-full flex-col items-center justify-center py-3 md:px-[400px]">
-      <div className="text-base font-light text-gray-600">
-        Created By{" "}
+    <div className="flex w-full flex-col items-center justify-center bg-background py-3 text-foreground md:px-[400px]">
+      <div className="text-sm font-light text-gray-600">
+        Created By{' '}
         <Link
           href={Links.Portfolio}
-          className="text-base font-medium text-teal-400 hover:opacity-80"
+          className="text-sm font-medium text-teal-400 hover:opacity-80"
         >
           Rahul Singh
         </Link>
       </div>
       <Link
         href={Links.Vercel}
-        className="flex items-center justify-center gap-2 text-base font-light text-gray-600 hover:opacity-80"
+        className="flex items-center justify-center gap-2 text-sm font-light text-gray-600 hover:opacity-80"
       >
         Deployed on
         <svg
